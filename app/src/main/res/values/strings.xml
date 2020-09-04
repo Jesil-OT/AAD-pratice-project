@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AAD practice project</string>
+    <string name="leaderBoard">LEADERBOARD</string>
+    <string name="submit">Submit</string>
+    <string name="skill_iq_leaders">Skill IQ Leaders</string>
+    <string name="learning_leaders">Learning Leaders</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
