@@ -2,18 +2,18 @@ package com.jesil.pratice.aad.data
 
 import com.google.gson.annotations.SerializedName
 
-class LearningLeadersData(
+data class LearningLeadersData(
     @SerializedName("name")
     var learningLeadersName: String,
 
     @SerializedName("hours")
-    var learningLeadersHours: String,
+    var learningLeadersHours: Int,
 
     @SerializedName("country")
     var learningLeadersCountry: String,
 
     @SerializedName("badgeUrl")
-    var learningLeadersBadgeUrl : String
-){
+    var learningLeadersBadgeUrl: String
+) {
 
 }

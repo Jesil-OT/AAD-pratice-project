@@ -11,7 +11,7 @@ import com.jesil.pratice.aad.fragment.SkillLeadersFragment
 class ViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     companion object {
         const val GET_COUNT = 2
-        lateinit var context : Context
+       // lateinit var context : Context
     }
 
     override fun getItem(position: Int): Fragment {
@@ -32,10 +32,10 @@ class ViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getPageTitle(position: Int): CharSequence? {
         when (position) {
             0 -> {
-                return context.getString(R.string.learning_leaders)
+                return "Learning Leaders"
             }
             1 -> {
-                return context.getString(R.string.skill_iq_leaders)
+                return "Skill IQ Leaders"
             }
         }
         return super.getPageTitle(position)

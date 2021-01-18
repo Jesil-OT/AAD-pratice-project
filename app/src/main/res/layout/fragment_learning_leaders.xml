@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayoutLearningLeaders"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.LearningLeadersFragment">
@@ -10,5 +13,33 @@
         android:id="@+id/recyclerViewLearningLeaders"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_learning_leaders" />
-</FrameLayout>
+
+
+    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+        android:id="@+id/pb_learning_leaders"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:cpb_color="#FFee44"
+        app:cpb_colors="@array/mycolors"
+        app:cpb_max_sweep_angle="300"
+        app:cpb_min_sweep_angle="10"
+        app:cpb_rotation_speed="2.5"
+        app:cpb_stroke_width="5dp"
+        app:cpb_sweep_speed="2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewLearningLeaders"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewLearningLeaders"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

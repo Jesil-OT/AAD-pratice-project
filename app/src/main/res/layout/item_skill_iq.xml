@@ -19,49 +19,49 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageViewLearningLeaders"
-                android:layout_width="110dp"
+                android:id="@+id/imageViewSkillIq"
+                android:layout_width="120dp"
                 android:layout_height="80dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/top_learner_badge"
+                android:src="@drawable/skill_iq_badge"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textViewLearningLeadersName"
+                android:id="@+id/textViewSkillIqName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/imageViewLearningLeaders"
+                app:layout_constraintStart_toEndOf="@+id/imageViewSkillIq"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Jesil Toborowei" />
 
             <TextView
-                android:id="@+id/textViewLearningLeadersHours"
+                android:id="@+id/textViewSkillIqScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="13sp"
-                app:layout_constraintStart_toStartOf="@+id/textViewLearningLeadersName"
-                app:layout_constraintTop_toBottomOf="@+id/textViewLearningLeadersName"
-                tools:text="223 Learning hours," />
+                app:layout_constraintStart_toStartOf="@+id/textViewSkillIqName"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSkillIqName"
+                tools:text="300 skill IQ score," />
 
             <TextView
-                android:id="@+id/textViewLearningLeadersCountry"
+                android:id="@+id/textViewSkillIqCountry"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:textSize="13sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textViewLearningLeadersHours"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewSkillIqScore"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textViewLearningLeadersHours"
-                app:layout_constraintTop_toBottomOf="@+id/textViewLearningLeadersName"
+                app:layout_constraintStart_toEndOf="@+id/textViewSkillIqScore"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSkillIqName"
                 app:layout_constraintVertical_bias="1.0"
                 tools:text="Nigeria" />
 
